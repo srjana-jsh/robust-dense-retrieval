@@ -1,0 +1,22 @@
+datasets:
+  - beir/scifact/test
+  - beir/fiqa/test
+  - beir/nfcorpus/test
+
+retrieval:
+  top_k: 100
+
+bm25:
+  k1: 1.5
+  b: 0.75
+  epsilon: 0.25
+
+dense:
+  model_name: sentence-transformers/msmarco-MiniLM-L6-cos-v5
+  batch_size: 64
+  device: null
+
+dense_finetuned:
+  model_name: checkpoints/dense_finetuned
+  batch_size: 64
+  device: null

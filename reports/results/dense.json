@@ -1,0 +1,37 @@
+{
+  "method": "dense",
+  "datasets": {
+    "beir/scifact/test": {
+      "top_k": 100,
+      "metrics": {
+        "ndcg@10": 0.4870163704392302,
+        "recall@10": 0.6393333333333334,
+        "recall@100": 0.8342222222222223,
+        "mrr@10": 0.4487830687830688
+      }
+    },
+    "beir/fiqa/test": {
+      "top_k": 100,
+      "metrics": {
+        "ndcg@10": 0.23168413627437962,
+        "recall@10": 0.2944923003950782,
+        "recall@100": 0.4956275077802855,
+        "mrr@10": 0.27838220164609057
+      }
+    },
+    "beir/nfcorpus/test": {
+      "top_k": 100,
+      "metrics": {
+        "ndcg@10": 0.2597458109457259,
+        "recall@10": 0.11227107425375658,
+        "recall@100": 0.23407410579156135,
+        "mrr@10": 0.4549019607843137
+      }
+    }
+  },
+  "settings": {
+    "model_name": "sentence-transformers/msmarco-MiniLM-L6-cos-v5",
+    "batch_size": 64,
+    "device": null
+  }
+}
